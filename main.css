@@ -1,0 +1,147 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+div.modal {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+@media screen and (max-width: 560px) {
+    .modal {
+    width: 100%;
+    }
+}
+@media screen and (min-width: 561px) {
+    .modal {
+    width: 50%;}
+    }
+
+
+
+.modal-header {
+    padding: 0px 16px;
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+  }
+  
+
+.modal-body {
+    padding: 0px 16px;
+}
+  
+
+.modal-footer {
+    float: right;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+  }
+
+  
+.modal-content {
+    display: none;
+    justify-content: center;
+    margin: 0, auto;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 1rem;
+    position: relative;
+    /* transform: opacity; */
+    /* transition: opacity 3s; */
+    /* animation-name: animatetop;
+    animation-duration: 0.3s */
+  }
+  
+.close {
+    float: right;
+}
+.close:hover {
+    background-color: rgb(213, 219, 207);
+    cursor: pointer;     
+}
+
+button {
+    color: rgb(251,251,251);
+    border: 1px rgb(211,211,211);
+    width: 5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.modal-call {
+    background-color: rgb(159, 163, 201);
+}
+
+button.green {
+    background-color: rgb(50,205,50);
+}
+button.red {
+    background-color: rgb(255,0,0);
+}
+
+
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    }
+
+
+
+
+
+
+
+
+
+
+  /* Add Animation */
+  /* @keyframes modal-content {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 3;
+    }
+    50%{
+        opacity: 5;
+    }
+    75%{
+        opacity: 8;
+    }
+    100%{
+        opacity: 10;
+    }
+    } */
